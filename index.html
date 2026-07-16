@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Preguntados Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="menu">
+    <h1>❓ Preguntados Web</h1>
+    <p>Elegí una categoría:</p>
+    <button onclick="openCategory('ciencia')">Ciencia</button>
+    <button onclick="openCategory('deporte')">Deporte</button>
+    <button onclick="openCategory('entretenimiento')">Entretenimiento</button>
+    <button onclick="openCategory('videojuegos')">Videojuegos</button>
+    <button onclick="openCategory('historia')">Historia</button>
+    <button onclick="openCategory('geografia')">Geografía</button>
+    <button onclick="openCategory('arte')">Arte</button>
+  </div>
+
+  <div id="gameArea" style="display:none;">
+    <h2 id="categoryTitle"></h2>
+    <p id="questionText"></p>
+
+    <div id="options"></div>
+
+    <p id="result"></p>
+
+    <button id="nextBtn" onclick="nextQuestion()">Siguiente pregunta</button>
+    <button onclick="backToMenu()">Volver al menú</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
