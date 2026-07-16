@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background: #222;
+  color: #eee;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#menu {
+  margin-top: 80px;
+}
+
+#menu button,
+#gameArea button {
+  padding: 10px 20px;
+  margin: 8px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#menu button:hover,
+#gameArea button:hover {
+  background: #666;
+}
+
+#gameArea {
+  margin-top: 50px;
+}
+
+#options button {
+  display: block;
+  margin: 8px auto;
+  width: 260px;
+}
+
+.optionBtn {
+  transition: background-color 0.3s;
+}
